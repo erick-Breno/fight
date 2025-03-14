@@ -1,0 +1,37 @@
+.galeria {
+  background: #000;
+  height: max-content;
+}
+
+.galeria h1 {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.galeria h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background:  linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 88.66%);;
+  position: absolute;
+  bottom: 30px;
+}
+
+.galeria-lista {
+  display: flex;
+  gap: 15px;
+  margin: 0 auto;
+  overflow-x: auto;
+  margin-bottom: 60px;
+}
+
+.galeria-lista img {
+  width: 255px;
+  height: 255px;
+}
+
+

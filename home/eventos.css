@@ -1,0 +1,82 @@
+.eventos {
+  background: #B71722;
+  height: max-content;
+  border-radius: 4px;
+}
+
+.eventos h1 {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.eventos h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background:  linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 88.66%);;
+  position: absolute;
+  bottom: 30px;
+}
+
+.eventos-lista {
+  display: flex;
+  gap: 15px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.eventos-item {
+  margin: 0 auto;
+}
+
+.botao-eventos {
+  display: block;
+  margin: 40px auto;
+  padding-bottom: 40px;
+}
+
+.botao-eventos a {
+  border: 2px solid #fff;
+  padding: 20px 100px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  max-width: max-content;
+  text-align: center;
+  position: relative;
+}
+
+.botao-eventos a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 90px;
+  top: 50px;
+  transition: .4s;
+}
+
+.botao-eventos a:hover::after {
+  width: 45%;
+  background: #fff;
+}
+
+@media (max-width: 380px) {
+  .botao-eventos a {
+    padding: 10px 50px;
+    text-transform: uppercase;
+  }
+  .botao-eventos a::after {
+    display: none;
+  }
+
+}
+
+
+
+
